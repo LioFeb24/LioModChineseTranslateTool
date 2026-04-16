@@ -39,16 +39,6 @@ python main.py
 - 对重复原文启用缓存，减少重复请求
 - 会尽量保留占位符（`%s`、`{name}`、`\n`、`§a` 等）；校验失败的条目保留原文继续跑
 
-## 一键更新 GitHub 仓库
-
-双击运行 [update_github.bat](file:///c:/Users/30848/Desktop/LioModChineseTranslateTool/update_github.bat)：
-
-- 自动 `git add -A`
-- 有变更才会自动 commit
-- 自动 `git pull --rebase origin main`
-- 自动 `git push origin main`
-
-适合你每次改完 README / 代码后快速同步到 GitHub。
 
 ## 常见问题
 
@@ -138,16 +128,6 @@ python main.py
 
 - `API Key` 具有接口调用权限，不要硬编码到仓库里
 - 如果后续做配置落盘，建议默认忽略配置文件并避免提交密钥
-
-## 许可证
-
-当前仓库没有提供 `LICENSE`（并且在 `.gitignore` 中忽略了 `LICENSE`）。
-
-如果你准备开源或接受他人贡献，建议补充：
-
-- `LICENSE`
-- 贡献说明
-- 版本发布说明
 
 为了降低游戏文本格式被模型破坏的概率，项目实现了占位符校验逻辑。
 
@@ -328,25 +308,6 @@ LioModChineseTranslateTool/
 - 增加批量处理多个 JAR 的能力
 - 加入日志输出，便于定位失败条目
 - 增加 CLI 模式，方便脚本化使用
-
-## 适合补充的工程文件
-
-当前仓库还没有以下常见文件，如有需要可补充：
-
-- `requirements.txt`
-- `.gitignore`
-- 打包说明文档
-- 示例输入输出截图
-- 发布版使用说明
-
-## 安全提示
-
-请注意：
-
-- 你填写的 `API Key` 具有接口调用权限
-- 不建议把带有真实 Key 的配置硬编码到源码中
-- 如果后续增加配置文件持久化，建议至少避免将 Key 提交到版本控制
-
 ## 快速开始
 
 如果你只想马上跑起来，可以直接照下面做：
